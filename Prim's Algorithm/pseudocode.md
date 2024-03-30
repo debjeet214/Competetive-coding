@@ -1,5 +1,7 @@
+<h2> PSEUDOCODE</h2>
 The pseudocode for prim's algorithm shows how we create two sets of vertices U and V-U. U contains the list of vertices that have been visited and V-U the list of vertices that haven't. One by one, we move vertices from set V-U to set U by connecting the least weight edge.
 
+// <B>code<B>
 T = ∅;
 U = { 1 };
 while (U ≠ V)
