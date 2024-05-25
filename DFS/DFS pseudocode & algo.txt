@@ -1,0 +1,27 @@
+The DFS Algorithm:
+Step 1: Assign status 1 (ready status) to all nodes in the graph.
+
+Step 2: Push the starting node onto the stack and assign it status 2 (visiting status).
+
+Step 3: Repeat steps 4 and 5 until the stack is empty.
+
+Step 4: Pop the top node from the stack, process it, and assign it status 3 (visited status).
+
+Step 5: Push all unvisited neighbours of the current node onto the stack and assign them status 2 (visiting status).
+
+Step 6: Terminate the process.
+
+DFS Pseudocode:
+DFS(G, v)   ( v is the vertex where the search starts )
+Stack S := {};   (Initialize an empty stack S)
+For each vertex u in G, set visited[u] := false;
+Push v onto S;
+While S is not empty, do the following:
+u = pop S;
+If u has not been visited, then
+Mark u as visited;
+For each unvisited neighbour w of u,
+Push w onto S;
+End if
+End while
+END DFS
